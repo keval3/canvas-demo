@@ -1,0 +1,21 @@
+<div class="header">
+    <a [routerLink]="'/'">Back</a>
+    <h1>Header</h1>
+</div>
+<div class="container">
+    <div class="sidebar">
+        <button class="browse-button">
+            <input type="file" (change)="uploadImage($event)" multiple accept=".png, .jpg, .jpeg" />
+            Browse
+        </button>
+        <div class="image-list">
+            <div *ngFor="let image of images; let i = index" class="image-item">
+                <img [src]="image.img.src" alt="uploaded image" />
+                <span>{{image.name}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="canvas-container" #canvasContainer>
+        <canvas #canvasElement width="600" height="800" style="border:1px solid #ccc;"></canvas>
+    </div>
+</div>

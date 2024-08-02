@@ -1,0 +1,30 @@
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 20px);
+    background-color: #eaeaea;
+}
+
+.template-container {
+    width: 300px;
+    height: 400px;
+    background-color: #f0f0f0;
+    border: 2px solid #4CAF50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.template-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
